@@ -15,6 +15,7 @@ body {
 
 nav {
   text-align: center;
+  margin-top: 3rem;
 }
 nav ul {
   display: flex;
@@ -23,18 +24,36 @@ nav ul {
   justify-content: space-evenly;
 }
 nav li {
-  text-decoration: none;
+  text-decoration: underline;
   margin-right: 30px;
   font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
 }
 nav a {
-  text-decoration: none;
+  color: #000;
 }
 nav a:link {
   text-decoration: none;
 }
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .logo {
-  max-width: 200px;
+  max-width: 150px;
+  margin-top: 2rem;
+}
+
+header,
+main,
+footer {
+  max-width: 95%;
+  margin: 0 auto;
 }
 
 /*BURGER-MENU*/
@@ -74,7 +93,7 @@ nav a:link {
 @media (max-width: 800px) {
   .burger-menu {
     display: flex;
-    padding-top: 40px;
+    align-items: end;
   }
   nav {
     flex-direction: column;

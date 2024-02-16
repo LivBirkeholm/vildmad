@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Forside</title>
     <link rel="stylesheet" href="https://use.typekit.net/wup7fgb.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <h1>lorte lort</h1>
         <div class="logo">
             <a href="index.html"><img src="logo.png" alt="logo"></a>
         </div>
@@ -25,6 +30,7 @@
             </div>
             <ul class="burger-menu-content">
                 <li class="active"><a href="index.html">HOME</a></li>
+                <li class="active"><a href="index.html">DOWNLOAD APP</a></li>
             </ul>
             <div class="close-icon">
                 <div class="bar"></div>
@@ -35,52 +41,151 @@
 
     <main>
         <div class="experience">
-            <h2>Experience<br>MUSHROOM<br>foraging here</h2>
+            <h2 class="sourceserif">Experience</h2>
+            <h2 class="inter">MUSHROOM</h2>
+            <h2 class="sourceserif">foraging here</h2>
         </div>
         <div class="lilletekst">
             <p>(02`24)</p>
-            <p>View mushrooms</p>
+            <p><a href="produktliste.html">View mushrooms</a></p>
         </div>
         <div class="stortekst">
             <h1>VILD MAD</h1>
         </div>
+        <p class="description">When you forage for mushrooms, yo contribute to sustainability by sourcing natural
+            resources directly from
+            nature
+            instead of buying them in stores. Many mushrooms can be used in cooking, and it can be a fun challenge to
+            find and
+            prepare them. You can create everything from delicious dishes to exciting flavor experiences.</p>
 
-        <div class="sæson_grid">
-            <div class="sæson_grid_1">
-                <p class="rotertekst">Summer</p>
-                <img src="season.png" alt="season">
+        <hr>
+
+        <div class="season_grid">
+            <div class="season_grid_1">
+                <p class="rotatetext">Summer</p>
+                <img src="summer.jpg" alt="season">
             </div>
-            <div class="sæson_grid_2">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quod omnis dolorum consequatur
-                    totam,
-                    nesciunt ab tempore corporis tenetur odio facere distinctio ipsum quibusdam eum libero molestias
-                    quae
-                    reprehenderit voluptatum!</p>
+            <div class="season_grid_2">
+                <p></p>
+                <p class="seasondescription">Summer can be a time of abundant mushroom growth due to the warm and humid
+                    weather. There is a wide
+                    range of mushroom
+                    species that can be found in summer, providing opportunities to discover new and interesting types.
+                    here is a greater
+                    risk of encountering toxic mushrooms in summer as more species are in growth, requiring extra
+                    caution.</p>
+            </div>
+        </div>
+        <div class="season_grid">
+            <div class="season_grid_1">
+                <p class="rotatetext">Autumn</p>
+                <img src="autumn.jpg" alt="season">
+            </div>
+            <div class="season_grid_2">
+                <p></p>
+                <p class="seasondescription">Autumn is known to be the peak season for mushrooms, with many popular and
+                    delicious species in full growth. Foraging
+                    for mushrooms in autumn also provides an opportunity to enjoy the beautiful change of landscape and
+                    foliage. Autumn can
+                    be wet and windy, making mushroom foraging less comfortable and more challenging.</p>
+            </div>
+        </div>
+        <div class="season_grid">
+            <div class="season_grid_1">
+                <p class="rotatetext">Winter</p>
+                <img src="winter.jpg" alt="season">
+            </div>
+            <div class="season_grid_2">
+                <p></p>
+                <p class="seasondescription">Since fewer people typically forage for mushrooms in winter, there may be
+                    less competition and more freedom to explore
+                    and find mushrooms. Certain mushroom species actually thrive better in cooler and moist winter
+                    conditions, providing
+                    opportunities to find unique and rare finds. The number of available mushroom species may be limited
+                    in winter, making
+                    it harder to find a diversity of mushrooms.</p>
+            </div>
+        </div>
+        <div class="season_grid">
+            <div class="season_grid_1">
+                <p class="rotatetext">Spring</p>
+                <img src="spring.jpg" alt="season">
+            </div>
+            <div class="season_grid_2">
+                <p></p>
+                <p class="seasondescription">Spring often brings the emergence of new and fresh mushroom species that
+                    are delicious and juicy. Since fewer people
+                    typically forage for mushrooms in spring, there may be less competition to find and pick mushrooms.
+                    There may be fewer
+                    different mushroom species available in spring compared to other seasons.</p>
             </div>
         </div>
 
-        <h3>Get in touch!</h3>
-        <p>Interested in foraging together</p>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <h3 class="getintouch">Get in touch!</h3>
+        <p class="interested">Interested in foraging together?</p>
+        <form class="contactform" action="#" method="post">
+            <div class="form_left">
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email" required>
+                <br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="age">Age:</label>
+                <br>
+                <input type="number" id="age" name="age" required>
+                <br> <br>
 
-            <label for="about">About:</label>
-            <textarea id="about" name="about" rows="4" cols="50" placeholder="Your message..."></textarea>
+                <label for="dateInput">When can you participate:</label> <br>
+                <input type="date" id="dateInput" name="dateInput">
+                <br> <br>
 
+                <label for="about">Message:</label>
+                <br>
+                <textarea id="about" name="about" rows="4" cols="20"></textarea>
+                <br><br>
+            </div>
+            <div class="form_right">
+                <label>What are your interests?</label>
+                <div>
+                    <input type="checkbox" id="mushroom1" name="mushrooms" value="identification">
+                    <label for="mushroom1">Mushroom Identification</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mushroom2" name="mushrooms" value="cooking">
+                    <label for="mushroom2">Mushroom Cooking</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mushroom3" name="mushrooms" value="foraging">
+                    <label for="mushroom3">Mushroom Foraging</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mushroom4" name="mushrooms" value="cultivation">
+                    <label for="mushroom4">Mushroom Cultivation</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mushroom5" name="mushrooms" value="art">
+                    <label for="mushroom5">Mushroom Art</label>
+                </div>
+                <br>
+
+            </div>
             <input type="submit" value="Submit">
         </form>
 
 
     </main>
-    <template>
-        <img src="" alt="">
-    </template>
 
     <footer>
+        <hr>
+        <div class="footertext">
+            <p>VILD MAD ©</p>
+            <p>CONTACT</p>
+        </div>
     </footer>
 
     <script src="Javascript/burgermenu.js"></script>
