@@ -1,0 +1,97 @@
+.singlemushroom_main {
+  margin-top: 5rem;
+}
+
+.mushroomname {
+  font-family: "source-serif-pro", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.wheretofindcontent,
+.whentofindcontent {
+  text-align: center;
+}
+
+.wheretofindheading,
+.whentofindheading,
+.howtopickheading,
+.aromaheading,
+.misidentifyingheading,
+.sensoryheading {
+  margin-bottom: 1rem;
+}
+
+.whentofindcontent,
+.howtospotcontent,
+.locationimage,
+.howtopickcontent,
+.aromacontent,
+.misidentifyingcontent,
+.sensorycontent,
+.howtouseinkitchen {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+p {
+  font-family: "source-serif-pro", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.mushroomimage,
+.locationimage {
+  aspect-ratio: 16/7;
+  object-fit: cover;
+}
+
+@media (min-width: 1100px) {
+  .singlemushroom_main {
+    max-width: 100%;
+  }
+
+  .singlemushroom_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gapleft {
+    margin-left: 50px;
+  }
+
+  .gaptop {
+    margin-top: 50px;
+  }
+
+  .gapright {
+    margin-right: 50px;
+  }
+
+  .howtospotcontent {
+    width: 70%;
+    margin: 2rem auto 0 auto;
+  }
+
+  .howtouseinkitchen {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+  .howtouseinkitchen a {
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+  }
+}
