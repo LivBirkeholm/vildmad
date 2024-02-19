@@ -4,11 +4,56 @@ img {
   display: block;
 }
 
+.imagecontainer {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the transparency (last value) as needed */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Text or additional styling within the overlay */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
 h1 {
   font-family: "alternate-gothic-extra-cond", sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 20rem;
+}
+
+.explore {
+  font-family: "source-serif-pro", serif;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+  margin: 5rem 0;
+  font-size: 2rem;
 }
 
 .sourceserif {
