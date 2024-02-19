@@ -38,3 +38,9 @@
     margin: 5rem auto;
   }
 }
+
+.pil {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
