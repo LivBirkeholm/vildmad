@@ -1,0 +1,89 @@
+.forestoverview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.produktliste_main h3 {
+  margin-top: 5rem;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.areas {
+  text-align: center;
+  font-family: "source-serif-pro", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.season {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+@media (min-width: 800px) {
+  .produktliste_main {
+    max-width: 80%;
+    margin: 5rem auto;
+  }
+}
+
+.pil {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+h4 {
+  color: black;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  padding-bottom: 5%;
+  padding-top: 7%;
+}
+
+p {
+  color: black;
+  font-size: 9px;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  word-wrap: break-word;
+  padding-bottom: 2%;
+}
+
+a {
+  color: #838488;
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+  word-wrap: break-word;
+  text-align: right;
+}
+
+.footertext {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  padding-bottom: 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}

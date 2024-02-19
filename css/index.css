@@ -4,11 +4,56 @@ img {
   display: block;
 }
 
+.season_grid_1,
+.season_grid_2,
+.season_grid_3,
+.season_grid_4 {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the transparency (last value) as needed */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Text or additional styling within the overlay */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: "source-serif-pro", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
 h1 {
   font-family: "alternate-gothic-extra-cond", sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 20rem;
+}
+
+.explore {
+  font-family: "source-serif-pro", serif;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+  margin: 5rem 0;
+  font-size: 2rem;
 }
 
 .sourceserif {
@@ -18,7 +63,8 @@ h1 {
 }
 
 .experience {
-  margin-top: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
 }
 
 .inter {
@@ -46,6 +92,7 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 0.8rem;
+  margin-bottom: -3rem;
 }
 
 .description {
@@ -53,6 +100,10 @@ h1 {
   font-weight: 300;
   font-style: italic;
   line-height: 1.4rem;
+  padding-bottom: 10%;
+  padding-left: 2%;
+  padding-right: 4%;
+  margin-top: -8rem;
 }
 
 hr {
@@ -84,10 +135,11 @@ hr {
 }
 
 .seasondescription {
-  margin: 2rem 0;
+  margin: 5rem 76px;
   font-family: "source-serif-pro", serif;
   font-weight: 400;
   font-style: normal;
+  text-align: justify;
 }
 
 .getintouch {
@@ -177,7 +229,8 @@ textarea {
   .getintouch,
   .interested {
     width: 80%;
-    margin: 0 auto;
+    margin: 9px auto;
+    padding-left: 5%;
   }
 
   .form_left {
@@ -197,13 +250,20 @@ textarea {
   .contactform {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 70%;
+    width: 55%;
     margin: 3rem auto;
   }
 
   input[type="submit"] {
-    margin-top: 2rem;
+    margin-top: 4rem;
     grid-template-columns: 1fr;
     text-align: right;
+    margin-bottom: 4rem;
   }
+}
+
+.Arrow {
+  width: 15%;
+  float: right;
+  padding: 3%;
 }
