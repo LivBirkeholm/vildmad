@@ -17,10 +17,19 @@ function dataReceived(data) {
 }
 
 function showData(items) {
-  const template = document.querySelector("template").content;
+  const template = document.querySelector(".singlemushroom").content;
 
   const clone = template.cloneNode(true);
-  clone.querySelector("img").src = items.image;
+
+  clone.querySelector(".mushroomimage").src = items.image_single;
+  clone.querySelector(".mushroomname").textContent = items.title;
+  clone.querySelector(".wheretofindcontent").textContent = items.wheretofind;
+  clone.querySelector(".whentofindcontent").textContent = items.whentofind;
+  clone.querySelector(".howtospotcontent").textContent = items.howtospot;
+  clone.querySelector(".locationimage").src = items.nature_img;
+  clone.querySelector(".howtopickcontent").textContent = items.howtopick;
+  clone.querySelector(".misidentifyingcontent").textContent = items.misidentifying;
+  clone.querySelector(".sensorycontent").textContent = items.sensory;
 
   const parent = document.querySelector("main");
   parent.appendChild(clone);
