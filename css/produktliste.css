@@ -1,0 +1,40 @@
+.forestoverview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.produktliste_main h3 {
+  margin-top: 5rem;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.areas {
+  text-align: center;
+  font-family: "source-serif-pro", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.season {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+@media (min-width: 800px) {
+  .produktliste_main {
+    max-width: 80%;
+    margin: 5rem auto;
+  }
+}
