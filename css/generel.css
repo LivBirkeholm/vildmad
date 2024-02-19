@@ -39,7 +39,6 @@ nav a {
 nav a:link {
   text-decoration: none;
 }
-
 header {
   display: grid;
   grid-template-columns: 1fr 1fr;
