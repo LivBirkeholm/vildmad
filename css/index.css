@@ -4,15 +4,11 @@ img {
   display: block;
 }
 
-.imagecontainer {
+.season_grid_1,
+.season_grid_2,
+.season_grid_3,
+.season_grid_4 {
   position: relative;
-  width: 100%;
-}
-
-.image-container img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 .overlay {
@@ -34,6 +30,10 @@ img {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+  font-family: "source-serif-pro", serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2rem;
 }
 
 .image-container:hover .overlay {
