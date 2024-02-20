@@ -43,7 +43,7 @@ function showData(items) {
 
   const clone = template.cloneNode(true);
 
-  clone.querySelector(".mushroomimage").src = items.image_single;
+  clone.querySelector(".mushroomimage").src = items.image_front;
   clone.querySelector(".mushroomname").textContent = items.title;
   clone.querySelector("a").href = `produkt.html?id=${items.id}`;
   const parent = document.querySelector(".forestoverview");
