@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
+  margin-top: 3rem;
 }
 
 .produktliste_main h3 {
@@ -12,6 +13,11 @@
   font-weight: 300;
   font-style: normal;
   font-size: 1.2rem;
+}
+
+hr {
+  margin: 2rem auto;
+  border: 0.5px #000 solid;
 }
 
 .areas {
@@ -30,12 +36,27 @@
   font-weight: 300;
   font-style: normal;
   font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.mushroom_grid_item p {
+  color: black;
+  font-size: 0.8rem;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  word-wrap: break-word;
+  padding-bottom: 2%;
 }
 
 @media (min-width: 800px) {
   .produktliste_main {
     max-width: 80%;
     margin: 5rem auto;
+  }
+
+  hr {
+    width: 80%;
   }
 }
 
@@ -47,7 +68,7 @@
 
 h4 {
   color: black;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   word-wrap: break-word;
@@ -56,34 +77,25 @@ h4 {
   padding-top: 7%;
 }
 
-p {
-  color: black;
-  font-size: 9px;
-  font-family: "Inter", sans-serif;
-  font-style: italic;
-  font-weight: 200;
-  word-wrap: break-word;
-  padding-bottom: 2%;
-}
-
 a {
   color: #838488;
   font-size: 10px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  text-decoration: underline;
+  text-decoration: none;
   word-wrap: break-word;
-  text-align: right;
+}
+
+.readmore {
+  text-decoration: underline;
 }
 
 .footertext {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-family: "Inter", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
   padding-bottom: 5rem;
   text-align: center;
-  font-size: 1.5rem;
-  padding-top: 1rem;
 }
