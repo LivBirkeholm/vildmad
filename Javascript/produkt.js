@@ -2,7 +2,10 @@
 
 // eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFib3Z3aWpranJxZ2tqZGF2dmdoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5MTM1MTEsImV4cCI6MjAyMzQ4OTUxMX0.qNxLhSIBdXv7iGHP0U8A50On9kcZ8p8elJM0xfKiTeU
 
-fetch("https://abovwijkjrqgkjdavvgh.supabase.co/rest/v1/mushrooms", {
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+
+fetch(`https://abovwijkjrqgkjdavvgh.supabase.co/rest/v1/mushrooms?id=eq.${id}`, {
   method: "GET",
   headers: {
     apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFib3Z3aWpranJxZ2tqZGF2dmdoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc5MTM1MTEsImV4cCI6MjAyMzQ4OTUxMX0.qNxLhSIBdXv7iGHP0U8A50On9kcZ8p8elJM0xfKiTeU",
