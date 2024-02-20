@@ -4,6 +4,10 @@
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
+const season = urlParams.get("season");
+
+// document.querySelector(".pil").textContent = season;
+document.querySelector(".pil").href = "produktliste.html?season=" + season;
 
 fetch(`https://abovwijkjrqgkjdavvgh.supabase.co/rest/v1/mushrooms?id=eq.${id}`, {
   method: "GET",

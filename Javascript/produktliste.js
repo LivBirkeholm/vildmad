@@ -45,7 +45,7 @@ function showData(items) {
 
   clone.querySelector(".mushroomimage").src = items.image_front;
   clone.querySelector(".mushroomname").textContent = items.title;
-  clone.querySelector("a").href = `produkt.html?id=${items.id}`;
+  clone.querySelector("a").href = `produkt.html?id=${items.id}&season=${seasonUrl}`;
   const parent = document.querySelector(".forestoverview");
   parent.appendChild(clone);
 }
