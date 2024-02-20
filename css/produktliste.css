@@ -56,7 +56,7 @@ h4 {
   padding-top: 7%;
 }
 
-p {
+.category {
   color: black;
   font-size: 9px;
   font-family: "Inter", sans-serif;
@@ -66,7 +66,7 @@ p {
   padding-bottom: 2%;
 }
 
-a {
+.read_more {
   color: #838488;
   font-size: 10px;
   font-family: "Inter", sans-serif;
