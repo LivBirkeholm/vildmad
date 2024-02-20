@@ -25,7 +25,6 @@ nav ul {
   justify-content: space-evenly;
 }
 nav li {
-  text-decoration: underline;
   margin-right: 30px;
   font-size: 20px;
   font-family: "Inter", sans-serif;
@@ -38,6 +37,12 @@ nav a {
 }
 nav a:link {
   text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.active {
+  text-decoration: underline;
 }
 header {
   display: grid;
