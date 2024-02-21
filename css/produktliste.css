@@ -5,6 +5,14 @@
   margin-top: 3rem;
 }
 
+.mushroom_grid_item {
+  transition: transform 0.3s ease-in-out;
+}
+
+.mushroom_grid_item:hover {
+  transform: scale(1.1);
+}
+
 .produktliste_main h3 {
   margin-top: 5rem;
   text-decoration: underline;
