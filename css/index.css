@@ -21,12 +21,11 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust the transparency (last value) as needed */
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-/* Text or additional styling within the overlay */
 .overlay-content {
   position: absolute;
   top: 50%;
