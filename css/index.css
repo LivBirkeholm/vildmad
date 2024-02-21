@@ -165,6 +165,7 @@ hr {
   font-weight: 400;
   font-style: normal;
   font-size: 0.9rem;
+  letter-spacing: 1px;
 }
 
 input {
@@ -189,10 +190,12 @@ input[type="checkbox"]:checked {
 }
 
 input[type="submit"] {
-  font-size: 1rem;
+  font-size: 0.9rem;
   cursor: pointer;
   border: none;
   text-decoration: underline;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 textarea {
