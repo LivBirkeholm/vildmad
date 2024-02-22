@@ -121,6 +121,7 @@ hr {
 
 .lilletekst a {
   color: #000;
+  text-decoration: underline;
 }
 
 .lilletekst > :nth-child(2) {
