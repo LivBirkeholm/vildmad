@@ -102,10 +102,11 @@ h1 {
   font-weight: 300;
   font-style: italic;
   line-height: 1.4rem;
-  padding-bottom: 10%;
+  padding-bottom: 8%;
   padding-left: 2%;
   padding-right: 4%;
   margin-top: -3rem;
+  letter-spacing: 0.1rem;
 }
 
 a {

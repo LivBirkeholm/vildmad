@@ -48,7 +48,17 @@ hr {
 }
 
 .mushroom_grid_item p {
-  color: black;
+  color: #838488 !important;
+  font-size: 0.8rem;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  word-wrap: break-word;
+  padding-bottom: 2%;
+}
+
+.mushroom_grid_item h5 {
+  color: #000;
   font-size: 0.8rem;
   font-family: "Inter", sans-serif;
   font-style: italic;
@@ -85,8 +95,8 @@ h4 {
   padding-top: 7%;
 }
 
-a {
-  color: #838488;
+.mushroom_grid_item a {
+  color: #838488 !important;
   font-size: 10px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -96,6 +106,7 @@ a {
 
 .readmore {
   text-decoration: underline;
+  color: #838488;
 }
 
 .footertext {

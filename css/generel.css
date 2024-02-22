@@ -22,7 +22,9 @@ nav ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  margin-right: 4rem;
+  gap: 1rem;
 }
 nav li {
   margin-right: 30px;
@@ -68,6 +70,7 @@ footer {
   cursor: pointer;
   padding-left: 20px;
 }
+
 .bar {
   background-color: rgb(44, 44, 44);
   margin: 3px 0;
